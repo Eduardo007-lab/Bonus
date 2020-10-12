@@ -1,2 +1,5 @@
+# Trabalho final IN242
+#Prof.: Lúcio
+
 paho-mqtt
 pymongo

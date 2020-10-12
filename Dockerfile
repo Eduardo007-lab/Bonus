@@ -1,3 +1,6 @@
+# Trabalho final IN242
+#Prof.: Lúcio
+
 FROM python
 
 WORKDIR /usr/src/app

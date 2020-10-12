@@ -1,3 +1,5 @@
+# Trabalho final IN242
+#Prof.: Lúcio
 import paho.mqtt.client as mqtt
 from pymongo import MongoClient
 import json
@@ -5,7 +7,7 @@ import datetime
 
 mongo_client = MongoClient('mongo-db', 27017)
 mongo_db = mongo_client['in242']
-mongo_collection = mongo_db['temperatura']
+mongo_collection = mongo_db['pessoas']
 
 def msg_recebida(mqtt_client,userdata, msg):
     print('Recebendo mensagem...')

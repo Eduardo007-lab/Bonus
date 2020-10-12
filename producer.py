@@ -1,17 +1,26 @@
+# Trabalho final IN242
+#Prof.: Lúcio
+
 import paho.mqtt.client as mqtt
-import random
 import json
 
 print('Conectando ao MQTT Broker...')
 mqtt_client = mqtt.Client()
 mqtt_client.connect('localhost', 1883)
 
-temperatura = random.uniform(17, 30)
-print(temperatura)
+print(' Numero de pessoas')
+pessoas = int(input('Digite a quantidade de pessoas: '))
+print('\a') # => sinal sonoro , pelo menos comigo funcionou '-'
+print(pessoas)
 
 mensagem = {
     'Cliente': 'Inatel',
-    'temperatura': temperatura
+    'pessoas': pessoas
 }
 
 mqtt_client.publish('in242', json.dumps(mensagem))
+
+
+
+
+
