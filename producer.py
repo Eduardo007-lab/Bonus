@@ -6,7 +6,7 @@ import json
 
 print('Conectando ao MQTT Broker...')
 mqtt_client = mqtt.Client()
-mqtt_client.connect('localhost', 1883)
+mqtt_client.connect('18.190.79.7', 1883)
 
 print(' Numero de pessoas')
 pessoas = int(input('Digite a quantidade de pessoas: '))
